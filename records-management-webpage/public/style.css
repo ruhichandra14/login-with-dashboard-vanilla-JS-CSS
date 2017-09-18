@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+	background:url("http://freetwitterheaders.com/wp-content/uploads/2012/09/Gradient_02.jpg"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; 
+}
+
+
+
+/*-----------------------------------------------login page--------------------------------*/
+.login-wrapper{
+	width: 22%;
+	margin: 35vh auto;
+}
+
+.input-username, .input-password, .login-input-btn{
+	display: block;
+	padding: 10px;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+.login-input-btn{
+	cursor: pointer;
+	margin: 30px 0 0 0; 
+	padding: 15px;
+	color: white;
+    background-color: #ed143d;
+    border: 0;
+    font-weight: bold;
+}
+
+.error-msg{
+	color: #ff0000;
+    font-weight: bold;
+    margin-top: 12px;
+    font-size: 17px;
+    text-align: center;
+}
+
+
+
+/*------------------------------------dashboard page--------------------------------------*/
+.dashboard-header{
+    width: 100%;
+    background-color: #ed143d;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 21px;
+    font-family: sans-serif;
+}
+
+.dashboard-header span{
+    color: #fff;
+    font-weight: bolder;
+}
+
+a.logout-button {
+    float: right;
+    margin-right: 10%;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 8px 0;
+}
+
+.records-wrapper {
+    width: 80%;
+    margin: 14vh auto;
+}
+
+.records-wrapper .records-table{
+	background-color: #fff;
+	margin: auto;
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+tr,td,th{
+    border: 0;
+}
+
+td{
+    text-align: center;
+}
+
+th {
+    color: #008080;
+    background-color: #f0ffff;
+    text-decoration: underline;
+}
+
+tr td:last-child {
+    background-color: #f5fffa;
+}
+
+.records-table td {
+    padding: 10px;
+    font-weight: 800;
+    font-family: monospace;
+    background-color: aliceblue;
+}
+.record-list-item{
+	list-style-type: none;
+}
+
+.option-wrapper{
+	text-align: center;
+}
+
+.btn{
+    background-color: #79B9E1;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    width: 70px;
+    border: 0;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input.delete-btn{
+	position: relative;
+	left: 10px;
+}
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+    background-color: #5E90AF;
+    color: #fff;
+    font-weight: bold;
+}
+
+button#save-btn {
+    float: right;
+    margin: 10px 0px;
+    width: 100px;
+    padding: 10px 0;
+}
+
+.saveBtn{
+    display: none;
+    text-align: center;
+}
+
+
+
+
+/*media queries*/
+@media (max-width: 1063px) { 
+    input.delete-btn{
+        position: relative;
+        left: 0px;
+        top: 5px;
+    }
+}
+
+
